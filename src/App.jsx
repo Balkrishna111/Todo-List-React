@@ -16,7 +16,15 @@ function App() {
   };
 
   return (
-    <div className='main-container min-h-screen w-full bg-gradient-to-br from-yellow-300 to-orange-900 flex items-center'>
+    <div className='main-container min-h-screen relative w-full bg-gradient-to-br from-yellow-300 to-orange-900 flex items-center'>
+      <a
+        target='_blank'
+        href='https://github.com/sann-desh/Todo-List-React/tree/main'
+      >
+        <div className='repoLink absolute top-4 bg-gray-500 text-white left-4 p-2'>
+          Link to Repo
+        </div>
+      </a>
       <div className='mt-28 text-white font-bold pb-8 flex flex-col justify-center items-center w-full '>
         <h1 className='text-center underline text-3xl'>Todo List</h1>
         <Form addTodo={addTodo} />
